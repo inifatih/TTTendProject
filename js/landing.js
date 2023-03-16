@@ -1,7 +1,3 @@
-
-
-
-
 $("ul li:nth-child(1)").click(function(){
     $(".left-set img:nth-child(2)").animate({
       opacity: 1

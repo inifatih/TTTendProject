@@ -57,6 +57,16 @@ header .navigation .navigation-items a:hover:before{
   width: 100%;
 }
 
+header .search{
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #d9d9d9;
+  background-color: #fff;
+  border-color: #d9d9d9;
+  border-radius: 5px;
+}
+
 section{
   padding: 100px 200px;
 }
@@ -176,7 +186,7 @@ section{
 }
 
 .slider-navigation .nav-btn.active{
-  background: #2696E9;
+  background: #f4efe9;
 }
 
 .slider-navigation .nav-btn:not(:last-child){
@@ -249,7 +259,12 @@ section{
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  header .search{
+    padding: 10px;
+    border: 2px solid #d9d9d9;
+    background-color: #fff;
   }
 
   .menu-btn{
