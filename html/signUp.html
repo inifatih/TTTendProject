@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en" dir="ltr">
-        <meta charset="utf-8">
-        <title>Login Form</title>
-        <link rel="stylesheet" href="../css/signUp.css">
-    </head>
-    <body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | TTTend</title>
+    <link rel="stylesheet" href="../css/signUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="landing.html" class="brand">TTTend</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <input class="search" type="text" name="search" placeholder="Search...">
+          <a href="#">SHOP</a>
+          <a href="#">HELP</a>
+          <a href="signUp.html">SIGN IN</a>
+          <a href="#"><i class="fa fa-shopping-bag" ></i></a>
+        </div>
+    </header>
+    <section>
         <div class="wrapper">
             <div class="title">
                 Create an Account
@@ -38,5 +53,53 @@
                     Already have account? <a href="login.html">Log In</a>
                 </div>
             </form>
-    </body>
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="container-foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>TTTend</h4>
+            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Account</h4>
+            <ul>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Coupons</a></li>
+              <li><a href="#">Membership</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+    </script>
+  </body>
 </html>
