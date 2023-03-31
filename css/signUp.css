@@ -66,6 +66,86 @@ header .search{
   border-color: #d9d9d9;
   border-radius: 5px;
 }
+
+/* cart */
+.cart-sidebar{
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 35px gray;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all ease 0.5s;
+}
+.cart-sidebar .cart-title h4{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  padding: 20px 30px 20px;
+  border-bottom: 1px solid #000;
+}
+.cart-sidebar .cart-body{
+  padding: 30px 0;
+}
+.cart-sidebar .cart-item{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+.cart-sidebar .cart-item .img{
+  width: 20%;
+  float: left;
+}
+.cart-sidebar .cart-item .img img{
+  width: 100%;
+}
+.cart-sidebar .cart-item .text{
+  width: 80%;
+  float: left;
+  padding: 0 20px;
+}
+.cart-sidebar .cart-item .text span,
+.cart-sidebar .cart-item .text h5{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 5px;
+}
+.cart-sidebar .cart-item .text span{
+  color: #000;
+}
+.cart-sidebar .cart-item .text .color-primary{
+  color: #fff;
+}
+.cart-sidebar .btn{
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 39px;
+  letter-spacing: 4px;
+  border-radius: 50px;
+  box-shadow: 0 8px 10px #000;
+  margin: 20% 10% 0;
+}
+.cart-sidebar .close-icon{
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  cursor: pointer;
+}
+.cart-sidebar .close-icon img{
+  width: 50%;
+}
+
 section{
     padding: 100px 200px;
 }

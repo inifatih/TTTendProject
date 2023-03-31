@@ -14,12 +14,48 @@
       <div class="navigation">
         <div class="navigation-items">
           <input class="search" type="text" name="search" placeholder="Search...">
-          <a href="#">SHOP</a>
+          <a href="shop.html">SHOP</a>
           <a href="#">HELP</a>
           <a href="signUp.html">SIGN IN</a>
-          <a href="#"><i class="fa fa-shopping-bag" ></i></a>
+          <a class="cart-btn" href="#">
+            <i class="fa fa-shopping-bag" ></i>
+            <span>(2)</span>
+          </a>
+          </div>
         </div>
     </header>
+    <div class="cart-sidebar">
+        <span class="close-icon"><img src="../assets/close-icon.svg" alt=""></span>
+      <div class="cart-title">
+        <h4>CART (2)</h4>
+      </div>
+      <div class="cart-body">
+
+        <div class="cart-item">
+          <div class="img">
+            <img src="../assets/jjjjound-1.png" alt="">
+          </div>
+          <div class="text">
+            <span>1x</span>
+            <h5>T-Shirt</h5>
+            <h5 class="color-primary">$148</h5>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="img">
+            <img src="../assets/jjjjound-1.png" alt="">
+          </div>
+          <div class="text">
+            <span>1x</span>
+            <h5>T-Shirt</h5>
+            <h5 class="color-primary">$148</h5>
+          </div>
+        </div>
+
+        <a class="btn" href="#">CHECKOUT</a>
+      </div>
+    </div>
     <section>
         <div class="wrapper">
             <div class="title">
@@ -100,6 +136,19 @@
       menuBtn.classList.toggle("active");
       navigation.classList.toggle("active");
     });
+
+    //JS for CART SIDEBAR   
+    var cart_btn = document.querySelector(".cart-btn");
+    var cart_sidebar = document.querySelector(".cart-sidebar");
+    var close_icon = document.querySelector(".close-icon");
+
+    cart_btn.onclick = function(){
+      cart_sidebar.style.right = "0px";
+    }
+
+    close_icon.onclick = function(){
+      cart_sidebar.style.right = "-400px";
+    }
     </script>
   </body>
 </html>

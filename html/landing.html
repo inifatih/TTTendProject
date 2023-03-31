@@ -19,9 +19,45 @@
           <a href="shop.html">SHOP</a>
           <a href="#">HELP</a>
           <a href="signUp.html">SIGN IN</a>
-          <a href="#"><i class="fa fa-shopping-bag" ></i></a>
+          <a class="cart-btn" href="#">
+            <i class="fa fa-shopping-bag" ></i>
+            <span>(2)</span>
+          </a>
+          </div>
         </div>
     </header>
+    <div class="cart-sidebar">
+        <span class="close-icon"><img src="../assets/close-icon.svg" alt=""></span>
+      <div class="cart-title">
+        <h4>CART (2)</h4>
+      </div>
+      <div class="cart-body">
+
+        <div class="cart-item">
+          <div class="img">
+            <img src="../assets/jjjjound-1.png" alt="">
+          </div>
+          <div class="text">
+            <span>1x</span>
+            <h5>T-Shirt</h5>
+            <h5 class="color-primary">$148</h5>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="img">
+            <img src="../assets/jjjjound-1.png" alt="">
+          </div>
+          <div class="text">
+            <span>1x</span>
+            <h5>T-Shirt</h5>
+            <h5 class="color-primary">$148</h5>
+          </div>
+        </div>
+
+        <a class="btn" href="#">CHECKOUT</a>
+      </div>
+    </div>
 
     <section class="home">
       <video class="video-slide active" src="..\assets\pexels-ambientnature-atmosphere-5955965.mp4" autoplay muted loop></video>
@@ -141,6 +177,19 @@
         sliderNav(i);
       });
     });
+
+    //JS for CART SIDEBAR   
+    var cart_btn = document.querySelector(".cart-btn");
+    var cart_sidebar = document.querySelector(".cart-sidebar");
+    var close_icon = document.querySelector(".close-icon");
+
+    cart_btn.onclick = function(){
+      cart_sidebar.style.right = "0px";
+    }
+
+    close_icon.onclick = function(){
+      cart_sidebar.style.right = "-400px";
+    }
     </script>
   </body>
 </html>
