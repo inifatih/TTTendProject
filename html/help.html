@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | TTTend</title>
+    <link rel="stylesheet" href="../css/help.css">
+    <script src="../js/help.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="landing.html" class="brand">TTTend</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <input class="search" type="text" name="search" placeholder="Search...">
+          <a href="shop.html">SHOP</a>
+          <a href="help.html">HELP</a>
+          <a href="signUp.html">SIGN IN</a>
+          <a class="cart-btn" href="#">
+            <i class="fa fa-shopping-bag" ></i>
+            <span>(2)</span>
+          </a>
+          </div>
+        </div>
+    </header>
+    <div class="cart-sidebar">
+        <span class="close-icon"><img src="../assets/close-icon.svg" alt=""></span>
+      <div class="cart-title">
+        <h4>CART (2)</h4>
+      </div>
+      <div class="cart-body">
+
+        <div class="cart-item">
+          <div class="img">
+            <img src="../assets/jjjjound-1.png" alt="">
+          </div>
+          <div class="text">
+            <span>1x</span>
+            <h5>T-Shirt</h5>
+            <h5 class="color-primary">$148</h5>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="img">
+            <img src="../assets/jjjjound-1.png" alt="">
+          </div>
+          <div class="text">
+            <span>1x</span>
+            <h5>T-Shirt</h5>
+            <h5 class="color-primary">$148</h5>
+          </div>
+        </div>
+
+        <a class="btn" href="#">CHECKOUT</a>
+      </div>
+    </div>
+
+        <section class="help">
+            <main>
+                <section>
+                    <h2>Frequently Asked Questions</h2>
+                    <ul>
+                        <li>
+                            <h3>What is this website about?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis, mauris id euismod
+                                consectetur, ex massa tincidunt mi, at suscipit quam orci vel ex. </p>
+                        </li>
+                        <li>
+                            <h3>How do I create an account?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis, mauris id euismod
+                                consectetur, ex massa tincidunt mi, at suscipit quam orci vel ex.</p>
+                        </li>
+                        <li>
+                            <h3>How do I reset my password?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis, mauris id euismod
+                                consectetur, ex massa tincidunt mi, at suscipit quam orci vel ex.</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contactUs">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or comments, please don't hesitate to contact us:</p>
+                    <ul>
+                        <li>Email: TTTend@gmail.com</li>
+                        <li>Phone: 088-100</li>
+                        <li>Address: Jl. Bhaskara II no.22, Surabaya IDN</li>
+                    </ul>
+                </section>
+            </main>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>TTTend</h4>
+                        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="help.html">FAQ</a></li>
+                            <li><a href="help.html">Return Policy</a></li>
+                            <li><a href="help.html">Privacy Policy</a></li>
+                            <li><a href="help.html">Accessibility</a></li>
+                            <li><a href="help.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="order.html">Orders</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://web.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        //JS for CART SIDEBAR   
+        var cart_btn = document.querySelector(".cart-btn");
+        var cart_sidebar = document.querySelector(".cart-sidebar");
+        var close_icon = document.querySelector(".close-icon");
+
+        cart_btn.onclick = function(){
+        cart_sidebar.style.right = "0px";
+        }
+
+        close_icon.onclick = function(){
+        cart_sidebar.style.right = "-400px";
+        }
+    </script>
+</html>
