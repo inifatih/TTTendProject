@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product | TTTend</title>
-    <link rel="stylesheet" href="../css/forgotpassword.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <script src="../js/profile.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   </head>
+
   <body>
     <header>
       <a href="landing.html" class="brand">TTTend</a>
@@ -24,57 +26,54 @@
           </div>
         </div>
     </header>
-    <div class="cart-sidebar">
-        <span class="close-icon"><img src="../assets/close-icon.svg" alt=""></span>
-      <div class="cart-title">
-        <h4>CART (2)</h4>
-      </div>
-      <div class="cart-body">
 
-        <div class="cart-item">
-          <div class="img">
-            <img src="../assets/jjjjound-1.png" alt="">
-          </div>
-          <div class="text">
-            <span>1x</span>
-            <h5>T-Shirt</h5>
-            <h5 class="color-primary">$148</h5>
-          </div>
-        </div>
-
-        <div class="cart-item">
-          <div class="img">
-            <img src="../assets/jjjjound-1.png" alt="">
-          </div>
-          <div class="text">
-            <span>1x</span>
-            <h5>T-Shirt</h5>
-            <h5 class="color-primary">$148</h5>
-          </div>
-        </div>
-
-        <a class="btn" href="#">CHECKOUT</a>
-      </div>
-    </div>
-    <section>
+    <section id="account" class="account-section">
         <div class="wrapper">
-            <div class="title">
-                Forget Your Password
-            </div>
-            <form action="#">
-                <div class="field">
-                    <label>Email</label>
-                    <input type="text" required>
-                </div>
-                <div class="field">
-                    <input type="submit" value="Send Verification Code">
-                </div>
-                <div class="login-link">
-                    Back to <a href="login.html">Log In</a>
-                </div>
-            </form>
-        </div>
-    </section>
+          <div class="title">Account</div>
+          <nav class="nav-text">
+            <div class="profileBar"><button><a href="profile.html">Profile</a></button></div>
+            <div class="orderBar"><button><a href="order.html">Orders</a></button></div>
+            <div class="logoutBar"><button><a href="login.html">Logout</a></button></div>
+          </nav>
+      
+          <div class="orderHistory">
+            <span class="id">Order ID:</span>
+            <span class="info">123456789</span>
+          </div>
+          <div class="orderHistory">
+            <span class="date">Order Date</span>
+            <span class="info">January 1, 2023</span>
+          </div>
+          <div class="orderHistory">
+            <span class="status">Order Status:</span>
+            <span class="info">Delivered</span>
+          </div>
+
+          </div>
+        </section>
+      
+        <script>
+            const addAddressButton = document.getElementById("addAddressButton");
+            const addressForm = document.getElementById("addressForm");
+            const field = document.querySelector(".field");
+            const accountSection = document.querySelector(".account-section");
+            const wrapper = document.querySelector(".wrapper");
+
+            addAddressButton.addEventListener("click", () => {
+            addressForm.classList.remove("hidden");
+            field.classList.add("hidden");
+            accountSection.style.height = `${wrapper.offsetHeight}px`;
+            });
+
+            addressForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            addressForm.classList.add("hidden");
+            field.classList.remove("hidden");
+            accountSection.style.height = "auto";
+            // tambahkan kode lainnya untuk mengirim data form ke server
+            });
+
+        </script>
     <footer class="footer">
       <div class="container-foot">
         <div class="row">
