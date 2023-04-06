@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TTTend Dashboard</title>
+<!-- ======= Styles ====== -->
+<link rel="stylesheet" href="../css/dashboard.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+<!-- =============== Navigation ================ -->
+<div class="container">
+    <div class="navigation">
+    <ul>
+        <li>
+        <a>
+            <span class="title" style="font-size: 25px; font-weight: bold; letter-spacing: 3px; margin-top: 10px">TTTEnd</span>
+        </a>
+        </li>
+
+        <li>
+        <a href="#">
+            <span class="icon">
+            <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="title">Dashboard</span>
+        </a>
+        </li>
+
+        <li>
+        <a href="/dashboard/admin/customer/customers.html">
+            <span class="icon">
+            <ion-icon name="people-outline"></ion-icon>
+            </span>
+            <span class="title">Customers</span>
+        </a>
+        </li>
+
+        <li>
+        <a href="/dashboard/admin/driver/driver.html">
+            <span class="icon"> <ion-icon name="key-outline"></ion-icon> </span>
+            <span class="title">Product</span>
+        </a>
+        </li>
+
+        <li>
+        <a href="../admin/cars/cars.html">
+            <span class="icon"> <ion-icon name="help-outline"></ion-icon> </span>
+            <span class="title">Inbox</span>
+        </a>
+        </li>
+
+        <li>
+        <a href="../admin/feedback.html">
+            <span class="icon">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+            </span>
+            <span class="title">Feedback</span>
+        </a>
+        </li>
+
+        <li style="margin-top: 30px;">
+        <a href="../admin/account.html">
+            <span class="icon">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <span class="title">Account</span>
+        </a>
+        </li>
+
+        <li>
+            <a href="../admin/privacy.html">
+                <span class="icon">
+                    <ion-icon name="key-outline"></ion-icon>
+                </span>
+                <span class="title">Privacy</span>
+            </a>
+            </li>
+
+            <li>
+                <a href="../admin/help.html">
+                    <span class="icon">
+                    <ion-icon name="help-outline"></ion-icon>
+                    </span>
+                    <span class="title">Help</span>
+                </a>
+                </li>
+
+                <li>
+                    <a href="../admin/settings.html">
+                        <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                    </li>
+                    
+    </ul>
+    </div>
+
+    <!-- ========================= Main ==================== -->
+    <div class="main">
+    <div class="topbar">
+        <div class="toggle">
+        <ion-icon name="menu-outline"></ion-icon>
+        </div>
+
+        <div class="search">
+        <label>
+            <input type="text" placeholder="Search here" />
+            <ion-icon name="search-outline"></ion-icon>
+        </label>
+        </div>
+
+        <div class="user">
+        <a href="/form.html">
+            <img src="/assets/images/person-outline.svg" alt="" />
+        </a>
+        </div>
+    </div>
+
+    <!-- ======================= Cards ================== -->
+    <div class="cardBox">
+        <div class="card">
+        <div>
+            <div class="numbers">500</div>
+            <div class="cardName">VISITS</div>
+        </div>
+
+        <div class="iconBx">
+            <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        </div>
+
+        <div class="card">
+        <div>
+            <div class="numbers">50</div>
+            <div class="cardName">ORDERS</div>
+        </div>
+
+        <div class="iconBx">
+            <ion-icon name="cart-outline"></ion-icon>
+        </div>
+        </div>
+
+        <div class="card">
+        <div>
+            <div class="numbers">20</div>
+            <div class="cardName">PRODUCTS</div>
+        </div>
+
+        <div class="iconBx">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        </div>
+
+        <div class="card">
+        <div>
+            <div class="numbers">5jt</div>
+            <div class="cardName">TOTAL PROFIT</div>
+        </div>
+
+        <div class="iconBx">
+            <ion-icon name="cash-outline"></ion-icon>
+        </div>
+        </div>
+    </div>
+
+    <!-- ================ Order Details List ================= -->
+    <div class="details">
+        <div class="recentOrders">
+        <div class="cardHeader">
+            <h2>Recent Orders</h2>
+            <a href="#" class="btn"></a>
+        </div>
+
+        <table class="riwayat" style="border-radius: 10px;">
+            <thead>
+            <tr class="kolomket">
+                <td>SKU</td>
+                <td>Invoice</td>
+                <td>Customer Name</td>
+                <td>Amount</td>
+                <td>Status</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>0321</td>
+                <td>#0001</td>
+                <td>Alfatih</td>
+                <td>1</td>
+                <td><span class="status arrived">Arrived</span></td>
+            </tr>
+
+            <tr>
+                <td>0320</td>
+                <td>#0002</td>
+                <td>Muhammad</td>
+                <td>1</td>
+                <td><span class="status shipped">Shipped</span></td>
+            </tr>
+
+            <tr>
+                <td>0319</td>
+                <td>#0003</td>
+                <td>Al</td>
+                <td>2</td>
+                <td><span class="status processed">Processed</span></td>
+            </tr>
+
+            <tr>
+                <td>0300</td>
+                <td>#0004</td>
+                <td>Jihan</td>
+                <td>2</td>
+                <td><span class="status arrived">Arrived</span></td>
+            </tr>
+
+            <tr>
+                <td>0320</td>
+                <td>#0005</td>
+                <td>Amalina</td>
+                <td>2</td>
+                <td><span class="status arrived">Arrived</span></td>
+            </tr>
+
+            <tr>
+                <td>0318</td>
+                <td>#0006</td>
+                <td>Putri</td>
+                <td>1</td>
+                <td><span class="status arrived">Arrived</span></td>
+            </tr>
+
+            <tr>
+                <td>0320</td>
+                <td>#0007</td>
+                <td>Fidha</td>
+                <td>2</td>
+                <td><span class="status shipped">Shipped</span></td>
+            </tr>
+
+            <tr>
+                <td>0319</td>
+                <td>#0008</td>
+                <td>Yanti</td>
+                <td>1</td>
+                <td><span class="status shipped">Shipped</span></td>
+            </tr>
+
+            <tr>
+                <td>0320</td>
+                <td>#0009</td>
+                <td>Alfa</td>
+                <td>5</td>
+                <td><span class="status shipped">Shipped</span></td>
+            </tr>
+
+            <tr>
+                <td>0319</td>
+                <td>#0010</td>
+                <td>Bang fatih</td>
+                <td>2</td>
+                <td><span class="status shipped">Shipped</span></td>
+            </tr>
+
+            <tr>
+                <td>0305</td>
+                <td>#0011</td>
+                <td>Abang</td>
+                <td>2</td>
+                <td><span class="status processed">Processed</span></td>
+            </tr>
+
+            <tr>
+                <td>0310</td>
+                <td>#0012</td>
+                <td>Adek</td>
+                <td>1</td>
+                <td><span class="status processed">Processed</span></td>
+            </tr>
+
+            <tr>
+                <td>0318</td>
+                <td>#0013</td>
+                <td>Mba</td>
+                <td>2</td>
+                <td><span class="status processed">Processed</span></td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- =========== Scripts =========  -->
+<script src="/assets/js/dashboard.js"></script>
+
+<!-- ====== ionicons ======= -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
